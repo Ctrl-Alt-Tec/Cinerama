@@ -152,6 +152,26 @@
 			#hero-main>h1{
 
 			}
+
+			.movie-carrousel{
+				display: flex;
+				margin: 0;
+				flex-direction: row;
+				overflow: auto
+			}
+			.movie-item{
+				background-color: black;
+				height: 320px; 
+				width: 212px;
+				margin: 8px; 
+				flex-grow: 1;
+				flex-shrink: 0; 
+			}
+
+			a{
+				color: inherit !important; 
+				text-decoration: none;
+			}
 		</style>
 	</head>
 	<body style = "text-align:center;background-image:url('cinerama4.png');background-size:contain; padding: 0%; margin: 0%;">
@@ -160,18 +180,20 @@
 
 
 		<div class="header"> 
-			<div class="header-element" id="cinerama-logo">CINERAMA</div> 
+			<div class="header-element" id="cinerama-logo">
+				<a href="index.html">CINERAMA</a>
+			</div> 
 			<div class="header-element">
 				<i class="material-icons">calendar_today</i>
-				<a class="link-to-page" href="NOTICIAS.html">NOTICIAS</a> 
+				<a href="NOTICIAS.html">NOTICIAS</a> 
 			</div> 
 			<div class="header-element">
 				<i class="material-icons">local_play</i>
-				<a class="link-to-page" href="TOP10.html">TOP #10</a> 
+				<a href="TOP10.html">TOP #10</a> 
 			</div> 
 			<div class="header-element">
 				<i class="material-icons">comment</i>
-				<a class="link-to-page" href="RESEÑAS.html">RESEÑAS</a> 
+				<a href="RESEÑAS.html">RESEÑAS</a> 
 			</div> 
 			<div></div>
 		</div>
@@ -256,10 +278,29 @@
 		</div>
 
 
-		<div style="padding: 16px; box-sizing: border-box; display: flex; flex-direction: column">
-				<h1 style="font-family: Arial, Helvetica, sans-serif">Top 10</h1>
+		<div style="padding: 16px; box-sizing: border-box; display: flex; flex-direction: column; background: white">
+			<h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 48px; font-weight: 600; text-align: left;">Top 10</h1>
+			<div class="movie-carrousel">
+				<div class="movie-item"></div>
+				<div class="movie-item"></div>
+				<div class="movie-item"></div>
+				<div class="movie-item"></div>
+				<div class="movie-item"></div>
+				<div class="movie-item"></div>
+				<div class="movie-item"></div>
+				<div class="movie-item"></div>
+				<div class="movie-item"></div>
+				<div class="movie-item"></div>
+			</div>
 		</div>
 
+
+		<div style="padding: 24px; box-sizing: border-box; display: flex; flex-direction: column; background: white; align-items: flex-start; font-size: 24px; text-align: left;">
+			<h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 48px; font-weight: 600; text-align: left; font-style: italic">Cinerama</h1>
+			Sistema de proyección cinematográfico que utiliza la imagen yuxtapuesta de tres proyectores sobre una pantalla muy ancha para dar impresión de relieve
+			<hr/>
+			<BR><BR> Buscamos compartir los conocimientos que tenemos del cine <BR> con el mundo y llevar cultura a través de las herramientas <BR> que los medios digitales nos ofrecen.<BR>
+		</div>
 
 
 		<BR><BR><BR><BR>
